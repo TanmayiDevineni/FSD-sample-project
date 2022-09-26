@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .circle {
+      padding-top: 2px;
+      height: 300px;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%;
+      position:absolute;
+      top: 200px;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+      background:  linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
+    }
+    
+    @keyframes scaleIn {
+      from {
+        transform: scale(.5, .5);
+        opacity: .5;
+      }
+      to {
+        transform: scale(2.5, 2.5);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body style="background-color:#050210;">
+  <div class="circle" style="animation-delay: -2s"></div>
+  <div class="circle" style="animation-delay: -1s"></div>
+  <div class="circle" style="animation-delay: -0"></div>
+</body>
+
+</html>
